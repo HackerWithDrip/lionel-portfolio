@@ -13,7 +13,8 @@
     --fw-reg: 300;
     --fw-bold: 900;
     --clr-light: #fff;
-    --clr-dark-cyan: #022429;
+    --clr-light-cyan: #033b44;
+    --clr-dark-cyan: #03191d;
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
     --fs-h1: 3rem;
@@ -36,7 +37,7 @@
 /* general styles */
 
 body {
-    background-color: var(--clr-dark-cyan);
+    background-color: var(--clr-light-cyan);
     color: var(--clr-light);
     margin: 0;
     font-family: var(--ff-primary);
@@ -127,7 +128,7 @@ h3 {
 
 .section__subtitle--intro,
 .section__subtitle--about {
-    background: var(--clr-accent);
+    background: var(--clr-dark-cyan);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
@@ -262,7 +263,7 @@ nav {
 /* My projects */
 
 .my-projects {
-    background-color: var(--clr-dark-cyan);
+    background-color: var(--clr-light-cyan);
     color: var(--clr-light);
     text-align: center;
 }

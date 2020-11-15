@@ -36,8 +36,8 @@
 /* general styles */
 
 body {
-    background-color: var(--clr-light);
-    color: var(--clr-dark);
+    background-color: var(--clr-dark-cyan);
+    color: var(--clr-light);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -131,6 +131,12 @@ h3 {
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+}
+
+.section__subtitle--projects {
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
 }
 
 
@@ -250,4 +256,40 @@ nav {
         padding-left: 1em;
         padding-right: calc(200px+3em);
     }
+}
+
+
+/* My projects */
+
+.my-projects {
+    background-color: var(--clr-dark-cyan);
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.portfolio__item {
+    background: var(--clr-accent);
+    overflow: hidden;
+}
+
+.portfolio__img {
+    transition: transform 500ms cubic-bezier(.5, 0, .5, 1), opacity 200ms linear;
+}
+
+.portfolio__item:focus {
+    position: relative;
+    z-index: 2;
+}
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img {
+    transform: scale(1.2);
+    opacity: .8;
 }

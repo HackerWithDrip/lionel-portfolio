@@ -179,9 +179,9 @@ nav {
     opacity: 0.25;
 }
 
-.skills {
+.skill {
     max-width: 450px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 @media(min-width:800px) {
@@ -190,7 +190,7 @@ nav {
         max-width: 1000px;
         margin: 0 auto;
     }
-    .skills+.skills {
+    .skill+.skill {
         margin-left: 2em;
     }
 }

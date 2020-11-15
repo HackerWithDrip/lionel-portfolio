@@ -5,6 +5,9 @@
 }
 
 
+/* PLEASE NOTE, I LIKE TO STYLE EVERYTHING POSSIBLE WITH CLASS */
+
+
 /* You can change these for your own properties */
 
 :root {
@@ -297,4 +300,49 @@ nav {
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
     opacity: .8;
+}
+
+
+/* footer section */
+
+.footer {
+    background: var(--clr-dark-cyan);
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2.5em 0;
+    font-size: var(--fs-h3);
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__link {
+    font-weight: var(--fw-bold);
+}
+
+.footer__link:hover,
+.social-list__link:hover {
+    opacity: .4;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: .5em 0 0;
+    padding: 0;
+}
+
+.social-list__item {
+    margin: 0 .6em;
+}
+
+.social-list__link {
+    padding: .5em;
 }

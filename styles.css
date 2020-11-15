@@ -39,6 +39,10 @@
 
 /* general styles */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--clr-light-cyan);
     color: var(--clr-light);

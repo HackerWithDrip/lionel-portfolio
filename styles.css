@@ -58,6 +58,17 @@ section {
 }
 
 
+/* external site button */
+
+.btn {
+    display: inline-block;
+    padding: .5em 1.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: var(--clr-dark-cyan);
+}
+
+
 /* Typographic styles */
 
 h1 {

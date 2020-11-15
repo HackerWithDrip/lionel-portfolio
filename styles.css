@@ -57,6 +57,11 @@ section {
     padding: 4em 1.5em 4em 1.5em;
 }
 
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
+
 
 /* external site button */
 
@@ -66,6 +71,20 @@ section {
     background: var(--clr-accent);
     color: var(--clr-dark);
     text-decoration: var(--clr-dark-cyan);
+    cursor: pointer;
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.skills {
+    margin-bottom: 3.5em;
+}
+
+.btn:hover {
+    transform: scale(1.125);
 }
 
 
@@ -199,7 +218,8 @@ nav {
     .skills {
         display: flex;
         max-width: 1000px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     .skill+.skill {
         margin-left: 2em;

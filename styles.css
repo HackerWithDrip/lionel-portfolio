@@ -12,9 +12,9 @@
     --ff-secondary: 'Source Code Pro', monospace;
     --fw-reg: 300;
     --fw-bold: 900;
-    --clr-light: #fff;
+    --clr-dark-cyan: #022429;
     --clr-dark: #303030;
-    --clr-cyan: #03363d;
+    --clr-accent: #16e0bd;
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -34,7 +34,7 @@
 /* general styles */
 
 body {
-    background-color: var(--clr-light);
+    background-color: var(--clr-dark-cyan);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
@@ -45,6 +45,10 @@ body {
 img {
     display: block;
     max-width: 100%;
+}
+
+strong {
+    font-weight: var(--fw-bold);
 }
 
 
@@ -66,4 +70,27 @@ h3 {
     line-height: 1.1;
     margin: 0;
     font-size: var(--fs-h3);
+}
+
+.section__title {
+    margin-bottom: .25em;
+}
+
+.section__title--intro {
+    font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong {
+    display: block;
+}
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
 }

@@ -110,3 +110,15 @@ nav {
 
 
 /* introduction section */
+
+.introduction {
+    position: relative;
+}
+
+@media( min-width: 600px) {
+    .introduction {
+        display: grid;
+        grid-template-areas: "img titlie" "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+}

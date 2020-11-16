@@ -456,3 +456,18 @@ header {
 .social-list__link {
     padding: .5em;
 }
+
+
+/* For each Portfolio project */
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+    max-width: 600;
+    margin-left: auto;
+    margin-right: auto;
+}

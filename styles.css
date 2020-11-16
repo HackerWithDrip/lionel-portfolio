@@ -356,6 +356,7 @@ header {
     }
     .skill+.skill {
         margin-left: 2em;
+        margin-right: 4em;
     }
 }
 

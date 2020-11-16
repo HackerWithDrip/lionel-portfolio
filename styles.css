@@ -290,7 +290,7 @@ header {
         width: min-content;
         margin: 0 auto;
         grid-column-gap: 1em;
-        grid-template-areas: "img titlie" "img subtitle";
+        grid-template-areas: "img title" "img subtitle";
         grid-template-columns: min-content max-content;
     }
     .introduction__img {
@@ -472,7 +472,7 @@ header {
 .portfolio-item-individual {
     padding: 0 2em 2em;
     max-width: 1000;
-    margin: 0 auto;
+    margin: 0 .5em;
 }
 
 .portfolio-item-individual p {

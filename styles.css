@@ -141,14 +141,19 @@ h3 {
     margin-bottom: 1em;
 }
 
-.section__subtitle--projects {
-    color: var(--clr-accent);
-    font-weight: var(--fw-bold);
-    margin-bottom: 2em;
-}
-
 .section__title--about {
     font-size: xx-large;
+}
+
+.section__title--projects {
+    font-size: xx-large;
+}
+
+.section__subtitle--projects {
+    color: var(--clr-dark-cyan);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+    font-size: x-large;
 }
 
 

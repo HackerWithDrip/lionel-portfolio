@@ -471,3 +471,7 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+.copyright {
+    margin-top: .8em;
+}

@@ -472,7 +472,12 @@ header {
     margin-right: auto;
 }
 
-.copyright {
+.copy-right {
     margin-top: .8em;
     font-size: small;
+}
+
+.last-update {
+    margin-top: .5em;
+    font-size: x-small;
 }

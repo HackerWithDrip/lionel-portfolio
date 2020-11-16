@@ -6,16 +6,5 @@ navToggle.addEventListener('click', () => {
 });
 
 navLinks.addEventListener('click', () => {
-    document.body.classList.remove('nav-open') // when the menu button is clicked, it will toggle the window for available options to navigate to
+    document.body.classList.remove('nav-open') // when the link (available options)is clicked, it will close the toggle window and navigate the page to the topic (depending on the link you clicked) you clicked.
 });
-
-
-
-/*
-navLinks.forEach(navLinks => {
-    navLinks.addEventListener('click', () => { // when the available option is clicked, it will close the toggle window
-        document.body.classList.remove('nav-open')
-    });
-});
-
-*/

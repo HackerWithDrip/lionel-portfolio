@@ -1,4 +1,4 @@
-# lionel's Portfolio Website
+# Lionel's Portfolio Website
 
 ## Welcome to my portfolio website
 This is my website that showcases my tech skills and projects that I have worked on. 

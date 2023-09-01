@@ -57,6 +57,11 @@ body {
     line-height: 1.6;
 }
 
+a{
+    text-decoration: none;
+    color:#16e0bd;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -205,6 +210,7 @@ header {
 
 .nav__link:hover {
     color: var(--clr-accent);
+    transition: 0.7s;
 }
 
 .nav-toggle {
@@ -420,6 +426,7 @@ header {
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
     opacity: .8;
+    transition: 0.7s;
 }
 
 
@@ -445,10 +452,12 @@ header {
 .footer__link:hover,
 .social-list__link:hover {
     opacity: .4;
+    transition: 0.7s;
 }
 
 .footer__link:hover {
     text-decoration: underline;
+    transition: 0.7s;
 }
 
 .social-list {

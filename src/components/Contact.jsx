@@ -36,7 +36,7 @@ const Contact = () => {
     {
       icon: <FaMapMarkerAlt />,
       label: 'Location',
-      value: 'Tzaneen, South Africa',
+      value: 'Johannesburg, Gauteng, South Africa',
       link: '#'
     },
   ];

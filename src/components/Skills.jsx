@@ -5,7 +5,7 @@ import {
   FaCode, FaServer, FaCloud, FaDocker, FaGitAlt,
   FaPython, FaJava, FaNode, FaReact, FaAws
 } from 'react-icons/fa';
-import { SiKubernetes, SiTerraform, SiAnsible, SiOpenshift, SiTypescript, SiAngular } from 'react-icons/si';
+import { SiKubernetes, SiTerraform, SiAnsible, SiRedhatopenshift, SiTypescript, SiAngular } from 'react-icons/si';
 import './Skills.css';
 
 const Skills = () => {
@@ -31,7 +31,7 @@ const Skills = () => {
   ];
 
   const devopsSkills = [
-    { name: 'OpenShift', icon: <SiOpenshift /> },
+    { name: 'OpenShift', icon: <SiRedhatopenshift /> },
     { name: 'Kubernetes', icon: <SiKubernetes /> },
     { name: 'Terraform', icon: <SiTerraform /> },
     { name: 'Ansible', icon: <SiAnsible /> },

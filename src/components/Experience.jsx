@@ -11,10 +11,10 @@ const Experience = () => {
   const experiences = [
     {
       title: 'Junior Software Engineer',
-      company: 'IBM',
-      period: 'Mar 2025 - May 2025',
-      description: 'Built site inspection app to automate site inspection, with AI integrated to produce reports.',
-      technologies: ['AI Integration', 'Application Development', 'Automation']
+      company: 'MG-Consulting Engieers PTY LTD',
+      period: 'Feb 2025 - May 2025',
+      description: 'Built site inspection mobile app to automate site inspection, with AI integrated to produce reports.',
+      technologies: ['AI Integration', 'Mobile Application Development', 'Automation']
     },
     {
       title: 'Platform Engineer Intern',

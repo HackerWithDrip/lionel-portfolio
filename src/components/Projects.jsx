@@ -10,8 +10,8 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'Document Processing Dashboards',
-      description: 'Developed document processing dashboards for Standard Bank, Nedbank, and FRG with AI integration for automated document analysis and processing.',
+      title: 'Document Verification Dashboard',
+      description: 'Developed document processing dashboards for Standard Bank with AI integration for automated document analysis and processing.',
       technologies: ['AI/ML', 'React', 'Node.js', 'Python', 'Dashboard Development'],
       link: '#',
       github: '#'
@@ -34,6 +34,20 @@ const Projects = () => {
       title: 'Project Management Dashboard',
       description: 'Full-stack project management dashboard built for Polymorph Systems to streamline project workflows and team collaboration.',
       technologies: ['Full Stack', 'React', 'Node.js', 'Database', 'REST API'],
+      link: '#',
+      github: '#'
+    },
+    {
+      title: 'Document Processing Dashboard',
+      description: 'Developed document processing dashboards for Nedbank with AI integration for automated document analysis and processing.',
+      technologies: ['AI/ML', 'React', 'Node.js', 'Python', 'Dashboard Development'],
+      link: '#',
+      github: '#'
+    },
+    {
+      title: 'Credit Application Dashboard',
+      description: 'Developed Credit Application dashboard for FRG with AI integration for automated document analysis and processing.',
+      technologies: ['AI/ML', 'React', 'Node.js', 'Python', 'Dashboard Development'],
       link: '#',
       github: '#'
     },

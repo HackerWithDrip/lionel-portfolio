@@ -12,8 +12,20 @@
 .project-card {
   padding: 2rem;
   border-radius: 20px;
-  transition: all 0.1s ease;
+  transition: all 0.2s ease;
   cursor: pointer;
+  border: 1px solid transparent;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.project-card:hover {
+  box-shadow: 0 25px 50px rgba(102, 126, 234, 0.25);
+  border-color: rgba(102, 126, 234, 0.6);
+}
+
+[data-theme='light'] .project-card:hover {
+  box-shadow: 0 25px 50px rgba(118, 75, 162, 0.25);
+  border-color: rgba(118, 75, 162, 0.6);
 }
 
 [data-theme='dark'] .project-card {

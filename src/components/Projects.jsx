@@ -94,7 +94,8 @@ const Projects = () => {
               key={index}
               className="project-card"
               variants={itemVariants}
-              whileHover={{ y: -10, scale: 1.02 }}
+              whileHover={{ y: -8, scale: 1.02 }}
+              transition={{ duration: 0.3 }}
             >
               <div className="project-header">
                 <h3>{project.title}</h3>

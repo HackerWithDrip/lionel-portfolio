@@ -13,12 +13,14 @@ const Skills = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   const frontendSkills = [
-    { name: 'HTML/CSS', icon: <FaCode /> },
+    { name: 'HTML', icon: <FaCode /> },
+    { name: 'CSS', icon: <FaCode /> },
     { name: 'JavaScript', icon: <FaCode /> },
     { name: 'TypeScript', icon: <SiTypescript /> },
     { name: 'React', icon: <FaReact /> },
     { name: 'Angular', icon: <SiAngular /> },
     { name: 'JavaFX', icon: <FaCode /> },
+    { name: 'Tailwind', icon: <FaCode /> },
   ];
 
   const backendSkills = [
@@ -28,6 +30,12 @@ const Skills = () => {
     { name: 'Java', icon: <FaJava /> },
     { name: 'C#', icon: <FaCode /> },
     { name: 'SQL', icon: <FaServer /> },
+    { name: 'REST API', icon: <FaServer /> },
+    { name: 'GraphQL', icon: <FaServer /> },
+    { name: 'Microservices', icon: <FaServer /> },
+    { name: 'API Integration', icon: <FaServer /> },
+    { name: 'API Testing', icon: <FaServer /> },
+    
   ];
 
   const devopsSkills = [
@@ -41,7 +49,50 @@ const Skills = () => {
     { name: 'Linux', icon: <FaServer /> },
   ];
 
-  const SkillCategory = ({ title, skills }) => {
+  const SkillCategory = ({ title, skills, direction = 'wave' }) => {
+    const isMarquee = direction === 'left' || direction === 'right';
+
+    const renderSkillCard = (skill, index, keySuffix = '') => {
+      const baseDelay = Math.min(index * 0.05, 0.5);
+      const isWave = direction === 'wave';
+
+      return (
+        <motion.div
+          key={`${skill.name}-${keySuffix}`}
+          className="skill-item"
+          whileHover={{ scale: 1.05, rotate: 3 }}
+          initial={{ opacity: 0, scale: 0.85 }}
+          animate={
+            isInView
+              ? isWave
+                ? { opacity: 1, scale: 1, y: [0, -8, 0] }
+                : { opacity: 1, scale: 1 }
+              : {}
+          }
+          transition={
+            isWave
+              ? {
+                  opacity: { delay: baseDelay, duration: 0.4 },
+                  scale: { delay: baseDelay, duration: 0.4 },
+                  y: {
+                    delay: baseDelay,
+                    duration: 4,
+                    repeat: Infinity,
+                    repeatType: 'reverse',
+                    ease: 'easeInOut',
+                  },
+                }
+              : { delay: baseDelay, duration: 0.4 }
+          }
+        >
+          <div className="skill-icon">{skill.icon}</div>
+          <span>{skill.name}</span>
+        </motion.div>
+      );
+    };
+
+    const marqueeItems = [...skills, ...skills];
+
     return (
       <motion.div
         className="skill-category"
@@ -50,21 +101,19 @@ const Skills = () => {
         transition={{ duration: 0.5 }}
       >
         <h3>{title}</h3>
-        <div className="skills-grid">
-          {skills.map((skill, index) => (
-            <motion.div
-              key={skill.name}
-              className="skill-item"
-              whileHover={{ scale: 1.1, rotate: 5 }}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={isInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ delay: index * 0.05 }}
-            >
-              <div className="skill-icon">{skill.icon}</div>
-              <span>{skill.name}</span>
-            </motion.div>
-          ))}
-        </div>
+        {isMarquee ? (
+          <div className={`skills-marquee marquee-${direction}`}>
+            <div className="marquee-track">
+              {marqueeItems.map((skill, index) =>
+                renderSkillCard(skill, index % skills.length, `${direction}-${index}`)
+              )}
+            </div>
+          </div>
+        ) : (
+          <div className="skills-grid">
+            {skills.map((skill, index) => renderSkillCard(skill, index, `wave-${index}`))}
+          </div>
+        )}
       </motion.div>
     );
   };
@@ -81,9 +130,9 @@ const Skills = () => {
           Skills
         </motion.h2>
         <div className="skills-content">
-          <SkillCategory title="Front-End" skills={frontendSkills} />
-          <SkillCategory title="Back-End" skills={backendSkills} />
-          <SkillCategory title="DevOps & Cloud" skills={devopsSkills} />
+          <SkillCategory title="Front-End" skills={frontendSkills} direction="left" />
+          <SkillCategory title="Back-End" skills={backendSkills} direction="right" />
+          <SkillCategory title="DevOps & Cloud" skills={devopsSkills} direction="wave" />
         </div>
       </div>
     </section>

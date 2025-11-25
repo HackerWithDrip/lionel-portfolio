@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useTheme } from '../context/ThemeContext';
 import { FaMoon, FaSun, FaBars, FaTimes } from 'react-icons/fa';
 import './Header.css';
+import profilePhoto from '../assets/profile-pic.jpeg';
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
@@ -47,7 +48,12 @@ const Header = () => {
           whileHover={{ scale: 1.05 }}
           onClick={() => scrollToSection('home')}
         >
-          LR
+          <img
+            src={profilePhoto}
+            alt="Lionel Raseemela profile"
+            className="logo-image"
+            loading="lazy"
+          />
         </motion.div>
 
         <nav className={`nav ${isMobileMenuOpen ? 'open' : ''}`}>

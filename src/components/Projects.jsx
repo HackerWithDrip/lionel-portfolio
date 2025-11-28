@@ -8,7 +8,21 @@ const Projects = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
+  const openProjectLink = (url) => {
+    if (!url || url === '#') return;
+    if (typeof window !== 'undefined') {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  };
+
   const projects = [
+    {
+      title: 'Fitness e-commerce platform',
+      description: 'Developed modern e-commerce prototype for FitTeam. Mobile-responsive design ready.',
+      technologies: ['Railway', 'React', 'Node.js', 'Stripe','Vite', '  CI/CD','TypeScript','SQLite', 'Axios', 'ExperessJs'],
+      link: 'https://hackerwithdrip.github.io/fit-team-prototype/#/',
+      github: 'https://github.com/HackerWithDrip/fit-team-prototype'
+    },
     {
       title: 'Document Verification Dashboard',
       description: 'Developed document processing dashboards for Standard Bank with AI integration for automated document analysis and processing.',
@@ -92,31 +106,70 @@ const Projects = () => {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className="project-card"
+              className={`project-card ${project.link !== '#' ? 'project-card-clickable' : ''}`}
               variants={itemVariants}
-              whileHover={{ y: -8, scale: 1.02 }}
               transition={{ duration: 0.3 }}
+              onClick={() => openProjectLink(project.link)}
+              onKeyDown={(e) => {
+                if (project.link === '#') return;
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  openProjectLink(project.link);
+                }
+              }}
+              role={project.link !== '#' ? 'button' : 'article'}
+              tabIndex={project.link !== '#' ? 0 : -1}
+              aria-label={
+                project.link !== '#'
+                  ? `Open ${project.title} project`
+                  : `${project.title} project preview`
+              }
             >
-              <div className="project-header">
-                <h3>{project.title}</h3>
-                <div className="project-links">
-                  {project.link !== '#' && (
-                    <a href={project.link} target="_blank" rel="noopener noreferrer">
-                      <FaExternalLinkAlt />
-                    </a>
-                  )}
-                  {project.github !== '#' && (
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <FaGithub />
-                    </a>
+              <div className="project-card-inner">
+                <div className="project-card-face project-card-front">
+                  <div className="project-header">
+                    <h3>{project.title}</h3>
+                    <div className="project-links">
+                      {project.link !== '#' && (
+                        <a href={project.link} target="_blank" rel="noopener noreferrer">
+                          <FaExternalLinkAlt />
+                        </a>
+                      )}
+                      {project.github !== '#' && (
+                        <a href={project.github} target="_blank" rel="noopener noreferrer">
+                          <FaGithub />
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                  <p className="project-description">{project.description}</p>
+                  <div className="project-tech">
+                    {project.technologies.map((tech, i) => (
+                      <span key={i} className="tech-tag">{tech}</span>
+                    ))}
+                  </div>
+                </div>
+                <div className="project-card-face project-card-back">
+                  {project.link !== '#' ? (
+                    <>
+                      <p className="project-preview-title">Live Preview</p>
+                      <div className="project-preview-frame">
+                        <iframe
+                          title={`${project.title} preview`}
+                          src={project.link}
+                          loading="lazy"
+                          sandbox="allow-same-origin allow-scripts allow-forms"
+                          referrerPolicy="no-referrer"
+                        />
+                      </div>
+                    </>
+                  ) : (
+                    <div className="project-nda">
+                      <p className="nda-title">Preview Restricted</p>
+                      <p className="nda-text">This project is protected by an NDA.</p>
+                    </div>
                   )}
                 </div>
-              </div>
-              <p className="project-description">{project.description}</p>
-              <div className="project-tech">
-                {project.technologies.map((tech, i) => (
-                  <span key={i} className="tech-tag">{tech}</span>
-                ))}
               </div>
             </motion.div>
           ))}

@@ -18,7 +18,7 @@ const Experience = () => {
     },
     {
       title: 'Junior Software Engineer',
-      company: 'MG-Consulting Engieers PTY LTD',
+      company: 'MG-Consulting Engineers PTY LTD',
       period: 'Feb 2025 - May 2025',
       description: 'Built site inspection mobile app to automate site inspection, with AI integrated to produce reports.',
       technologies: ['AI Integration', 'Mobile Application Development', 'Automation']
@@ -50,6 +50,13 @@ const Experience = () => {
       period: 'Dec 2021 - Nov 2024',
       description: 'Assisting Moshal students with basic computing and MS skills.',
       technologies: ['Training', 'Microsoft Office', 'Basic Computing']
+    },
+    {
+      title: 'Full Stack Web Developer',
+      company: 'Umuzi.org',
+      period: 'Oct 2020 – May 2021',
+      description: 'Learning and building full stack web applications',
+      technologies: ['Business Intelligence', 'Data Analysis', 'SQL', 'React', 'Node.js', 'MongoDB','Full Stack Development','HTML','CSS','JavaScript','Jasmine s']
     },
     {
       title: 'BI Learnership',

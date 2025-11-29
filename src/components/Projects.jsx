@@ -22,8 +22,8 @@ const Projects = () => {
       title: 'Fitness e-commerce platform',
       description: 'Developed modern e-commerce prototype for FitTeam. Mobile-responsive design ready.',
       technologies: ['Railway', 'React', 'Node.js', 'Stripe','Vite', '  CI/CD','TypeScript','SQLite', 'Axios', 'ExperessJs'],
-      link: 'https://hackerwithdrip.github.io/fit-team-prototype/#/',
-      github: 'https://github.com/HackerWithDrip/fit-team-prototype'
+      link: 'https://DynastyTech.github.io/fit-team-prototype/#/',
+      
     },
     {
       title: 'Document Verification Dashboard',
@@ -50,14 +50,14 @@ const Projects = () => {
       title: 'Xcentric Brand website',
       description: 'Building and maintaining the company\'s website.',
       technologies: ['Mobile Application Development', 'Web development', 'Testing', 'UI/UX Design','React Native', 'React', 'Node.js', 'MongoDB, Vercel'],
-      link: 'https://hackerwithdrip.github.io/Xcentric/',
+      link: 'https://DynastyTech.github.io/Xcentric/',
       github: '#'
     },
     {
       title: 'Munsoft website',
       description: 'Modernized the company\'s website.',
       technologies: ['Mobile Application Development', 'Web development', 'Testing', 'UI/UX Design','React Native', 'React', 'Node.js', 'MongoDB, Vercel'],
-      link: 'https://hackerwithdrip.github.io/munsoft-prototype/',
+      link: 'https://DynastyTech.github.io/munsoft-prototype/',
       github: '#'
     },
     {

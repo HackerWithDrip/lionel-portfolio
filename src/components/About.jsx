@@ -56,6 +56,12 @@ const About = () => {
                 containerized application deployment, and automation. Skilled in <strong>RedHat OpenShift</strong>, 
                 <strong> Kubernetes</strong>, <strong>Terraform</strong>, and <strong>Ansible</strong>, with hands-on 
                 experience deploying and maintaining scalable solutions across cloud environments.
+
+                I am a dedicated Software Engineer with a strong background in Computer Science, Mathematics, and Applied Mathematics.
+                I build full-stack and mobile solutions, work with cloud and DevOps tools, and have experience in ethical hacking.
+                I’m passionate about AI, Web3, and developing production-ready systems that solve real-world problems.
+                I also focus on mobile and web modernization—revamping outdated systems into fast, scalable, and user-friendly platforms.
+                I’m always learning, exploring new technologies, and building projects that help businesses and communities thrive.
               </motion.p>
               
               <motion.p

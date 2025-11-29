@@ -38,10 +38,10 @@ const Hero = () => {
             Hi, I am <span className="gradient-text">Lionel Raseemela</span>
           </motion.h1>
           <motion.h2 variants={itemVariants} className="hero-subtitle">
-            Platform Engineer Intern | Software & DevOps Enthusiast
+            Platform Engineer Intern | Software & DevOps Engineer
           </motion.h2>
           <motion.p variants={itemVariants} className="hero-description">
-            OpenShift • Kubernetes • Terraform • Ansible
+            OpenShift • Kubernetes • Terraform • Ansible • React & React Native • Flutter • Node.js • RESTful API • Microservices • API & AI Integration
           </motion.p>
           <motion.div
             variants={itemVariants}

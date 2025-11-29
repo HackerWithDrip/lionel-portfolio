@@ -6,6 +6,7 @@
   position: relative;
   overflow: hidden;
   padding: 0 2rem;
+  padding-top: 2rem;
 }
 
 .hero-content {

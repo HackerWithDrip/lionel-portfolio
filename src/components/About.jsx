@@ -52,38 +52,23 @@ const About = () => {
                 variants={itemVariants}
                 className="about-description"
               >
-                Platform Engineer Intern at <strong>IBM</strong> with a strong foundation in Hybrid Cloud, 
-                containerized application deployment, and automation. Skilled in <strong>RedHat OpenShift</strong>, 
-                <strong> Kubernetes</strong>, <strong>Terraform</strong>, and <strong>Ansible</strong>, with hands-on 
-                experience deploying and maintaining scalable solutions across cloud environments.
+                I’m a Platform Engineer Intern at IBM who loves working with Hybrid Cloud, OpenShift, Kubernetes, Terraform, and all things automation. 
+                I build full-stack and mobile apps, modernize outdated systems, and enjoy turning ideas into real, production-ready solutions. 
 
-                I am a dedicated Software Engineer with a strong background in Computer Science, Mathematics, and Applied Mathematics.
-                I build full-stack and mobile solutions, work with cloud and DevOps tools, and have experience in ethical hacking.
-                I’m passionate about AI, Web3, and developing production-ready systems that solve real-world problems.
-                I also focus on mobile and web modernization—revamping outdated systems into fast, scalable, and user-friendly platforms.
-                I’m always learning, exploring new technologies, and building projects that help businesses and communities thrive.
+                <br/>
+                <br/>
+                <br/>
+                With a background in Computer Science and Mathematics (18 distinctions!) and being a memeber of the Golden Key International Honour Society, problem-solving is basically my superpower. I’m big on AI, Web3, DevOps, and anything that pushes tech forward. 
+                I take pride in my work, always go the extra mile, and I’m constantly learning, experimenting, and building things that make life easier for businesses and communities.
+            
               </motion.p>
               
-              <motion.p
-                variants={itemVariants}
-                className="about-description"
-              >
-                Member of the <strong>Golden Key International Honour Society</strong> and a BSc. Computer Science, 
-                Mathematics & Applied Mathematics graduate with <strong>18 distinctions</strong>. Passionate about 
-                driving business outcomes through DevOps and platform engineering practices. Dedicated to leveraging 
-                emerging technologies to deliver impact and innovation in enterprise and client-facing environments.
-              </motion.p>
+              
 
-              <motion.p
-                variants={itemVariants}
-                className="about-description"
-              >
-                I take ownership of my work, as it defines my identity. I am obsessed with my work and always deliver 
-                quality and beyond what is required. <strong>Mathematics is my first language</strong>, and I consider 
-                problem-solving to be one of my greatest strengths.
-              </motion.p>
+          
             </div>
-
+          
+            
             <motion.div
               variants={itemVariants}
               className="about-hobbies"

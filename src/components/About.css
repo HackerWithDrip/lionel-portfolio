@@ -62,6 +62,7 @@
   font-size: 1.5rem;
   margin-bottom: 2rem;
   opacity: 0.9;
+  text-align: center;
 }
 
 [data-theme='dark'] .about-hobbies h3 {

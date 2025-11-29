@@ -11,7 +11,7 @@
 
 .project-card {
   perspective: 1600px;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
@@ -31,8 +31,8 @@
 .project-card-inner {
   position: relative;
   width: 100%;
-  min-height: 330px;
-  border-radius: 20px;
+  min-height: 430px;
+  border-radius: 100px;
   transition: transform 0.8s ease;
   transform-style: preserve-3d;
   border: 1px solid transparent;

@@ -130,8 +130,8 @@ const Skills = () => {
           Skills
         </motion.h2>
         <div className="skills-content">
-          <SkillCategory title="Front-End" skills={frontendSkills} direction="left" />
-          <SkillCategory title="Back-End" skills={backendSkills} direction="right" />
+          <SkillCategory title="Front-End" skills={frontendSkills} direction='left' />
+          <SkillCategory title="Back-End" skills={backendSkills} direction='right' />
           <SkillCategory title="DevOps & Cloud" skills={devopsSkills} direction="wave" />
         </div>
       </div>

@@ -38,6 +38,13 @@ const Projects = () => {
       github: '#'
     },
     {
+      title: 'Psychologist Booking website',
+      description: 'Building and maintaining the company\'s website and mobile app.',
+      technologies: ['Mobile Application Development', 'Web development', 'Testing', 'UI/UX Design','React Native', 'React', 'Node.js', 'MongoDB'],
+      link: 'https://amari.health/',
+      github: '#'
+    },
+    {
       title: 'Site Inspection App',
       description: 'Built site inspection app to automate site inspection processes, with AI integrated to produce comprehensive reports.',
       technologies: ['AI Integration', 'Mobile Development', 'Automation', 'Report Generation'],

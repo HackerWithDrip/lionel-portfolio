@@ -10,6 +10,13 @@ const Experience = () => {
 
   const experiences = [
     {
+      title: 'Platform Engineer Intern',
+      company: 'IBM',
+      period: 'May 2025 - Current',
+      description: 'Working with Hybrid Cloud, containerized application deployment, and automation. Skilled in RedHat OpenShift, Kubernetes, Terraform, and Ansible. Working with Standard Bank, Nedbank, FRG, and Ethio Telecom to develop document processing dashboards, infuse AI, and develop analytics dashboards.',
+      technologies: ['OpenShift', 'Kubernetes', 'Terraform', 'Ansible', 'DevOps', 'AI Integration']
+    },
+    {
       title: 'Junior Software Engineer',
       company: 'MG-Consulting Engieers PTY LTD',
       period: 'Feb 2025 - May 2025',
@@ -17,11 +24,11 @@ const Experience = () => {
       technologies: ['AI Integration', 'Mobile Application Development', 'Automation']
     },
     {
-      title: 'Platform Engineer Intern',
-      company: 'IBM',
-      period: 'Current',
-      description: 'Working with Hybrid Cloud, containerized application deployment, and automation. Skilled in RedHat OpenShift, Kubernetes, Terraform, and Ansible. Working with Standard Bank, Nedbank, FRG, and Ethio Telecom to develop document processing dashboards, infuse AI, and develop analytics dashboards.',
-      technologies: ['OpenShift', 'Kubernetes', 'Terraform', 'Ansible', 'DevOps', 'AI Integration']
+      title: 'Junior Software Engineer',
+      company: 'Amari Health',
+      period: 'Mar 2023 - Sep 2024',
+      description: 'Building and maintaining the company\'s website and mobile app.',
+      technologies: ['Mobile Application Development', 'Web development', 'Testing', 'UI/UX Design','React Native', 'React', 'Node.js', 'MongoDB']
     },
     {
       title: 'Software Dev Vac Work',
@@ -33,14 +40,14 @@ const Experience = () => {
     {
       title: 'Mathematics Tutor',
       company: 'Freelance',
-      period: 'Feb 2022 - Present',
+      period: 'Feb 2022 - Nov 2024',
       description: 'Helping first year engineering students with mathematics.',
       technologies: ['Mathematics', 'Teaching', 'Problem Solving']
     },
     {
       title: 'IT Trainer',
       company: 'Moshal',
-      period: 'Dec 2021 - Present',
+      period: 'Dec 2021 - Nov 2024',
       description: 'Assisting Moshal students with basic computing and MS skills.',
       technologies: ['Training', 'Microsoft Office', 'Basic Computing']
     },

@@ -30,8 +30,8 @@ const Contact = () => {
     {
       icon: <FaGithub />,
       label: 'GitHub',
-      value: 'HackerWithDrip',
-      link: 'https://github.com/HackerWithDrip'
+      value: 'DynastyTech',
+      link: 'https://github.com/DynastyTech'
     },
     {
       icon: <FaMapMarkerAlt />,

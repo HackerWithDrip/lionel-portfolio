@@ -69,7 +69,7 @@ const Hero = () => {
             className="hero-social"
           >
             <motion.a
-              href="https://github.com/HackerWithDrip"
+              href="https://github.com/DynastyTech"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, rotate: 5 }}

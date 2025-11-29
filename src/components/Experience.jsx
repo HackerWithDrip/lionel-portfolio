@@ -39,7 +39,7 @@ const Experience = () => {
     },
     {
       title: 'Mathematics Tutor',
-      company: 'Freelance',
+      company: 'Nelson Mandela University & University of Pretoria',
       period: 'Feb 2022 - Nov 2024',
       description: 'Helping first year engineering students with mathematics.',
       technologies: ['Mathematics', 'Teaching', 'Problem Solving']

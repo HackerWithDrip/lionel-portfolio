@@ -66,6 +66,13 @@ const Projects = () => {
       github: '#'
     },
     {
+      title: 'Daily News App',
+      description: 'Built a daily news app to provide users with the latest news and updates.',
+      technologies: ['Flutter', 'Mobile Development', 'REST & RESTful API', 'Android & iOS Development'],
+      link: '#',
+      github: '#'
+    },
+    {
       title: 'Project Management Dashboard',
       description: 'Full-stack project management dashboard built for Polymorph Systems to streamline project workflows and team collaboration.',
       technologies: ['Full Stack', 'React', 'Node.js', 'Database', 'REST API'],

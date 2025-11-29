@@ -45,6 +45,20 @@ const Projects = () => {
       github: '#'
     },
     {
+      title: 'Xcentric Brand website',
+      description: 'Building and maintaining the company\'s website.',
+      technologies: ['Mobile Application Development', 'Web development', 'Testing', 'UI/UX Design','React Native', 'React', 'Node.js', 'MongoDB, Vercel'],
+      link: 'https://hackerwithdrip.github.io/Xcentric/',
+      github: '#'
+    },
+    {
+      title: 'Munsoft website',
+      description: 'Modernized the company\'s website.',
+      technologies: ['Mobile Application Development', 'Web development', 'Testing', 'UI/UX Design','React Native', 'React', 'Node.js', 'MongoDB, Vercel'],
+      link: 'https://hackerwithdrip.github.io/munsoft-prototype/',
+      github: '#'
+    },
+    {
       title: 'Site Inspection App',
       description: 'Built site inspection app to automate site inspection processes, with AI integrated to produce comprehensive reports.',
       technologies: ['AI Integration', 'Mobile Development', 'Automation', 'Report Generation'],

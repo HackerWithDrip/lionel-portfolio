@@ -15,6 +15,8 @@ const Projects = () => {
     }
   };
 
+  //testing projects
+
   const projects = [
     {
       title: 'Fitness e-commerce platform',

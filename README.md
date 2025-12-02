@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with React, Vite, and Three.js featuring 3D animations and dark/light mode toggle.
 
-## 🚀 Features
+## Features
 
 - **Modern Design**: Clean, professional UI with smooth animations
 - **3D Animations**: Interactive 3D elements powered by React Three Fiber
@@ -11,7 +11,7 @@ A modern, responsive portfolio website built with React, Vite, and Three.js feat
 - **Smooth Scrolling**: Elegant navigation with smooth scrolling
 - **Performance Optimized**: Built with Vite for fast development and production builds
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **React** - UI library
 - **Vite** - Build tool and dev server
@@ -19,19 +19,19 @@ A modern, responsive portfolio website built with React, Vite, and Three.js feat
 - **Framer Motion** - Animation library
 - **React Icons** - Icon library
 
-## 📦 Installation
+## Installation
 
 ```bash
 npm install
 ```
 
-## 🏃 Development
+## Development
 
 ```bash
 npm run dev
 ```
 
-## 🏗️ Build
+## Build
 
 ```bash
 npm run build
@@ -43,4 +43,4 @@ npm run build
 
 ## 🌐 Live Site
 
-Visit: [https://hackerwithdrip.github.io/lionel-portfolio/](https://hackerwithdrip.github.io/lionel-portfolio/)
+Visit: [https://dynastytech.github.io/lionel-portfolio/](https://dynastytech.github.io/lionel-portfolio/)
